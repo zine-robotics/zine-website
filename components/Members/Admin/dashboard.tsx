@@ -112,6 +112,7 @@ const Dashboard = () => {
                                 <h5 className="text-2xl text-center font-bold mt-2" style={styles.textSecondary}>Tasks</h5>
                             </div>
                         </Link>
+                        
                         <div className="col-span-4 row-span-2 bg-white shadow-md cursor-pointer rounded-xl py-2 border-transparent border-2 hover:border-blue-400 flex flex-col justify-center">
                             <div className="text-center mt-2">
                                 <FontAwesomeIcon icon={faVolumeOff} size="2x" style={styles.textSecondary} />

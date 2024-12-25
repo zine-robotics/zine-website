@@ -57,11 +57,12 @@ const Stage = ({
                 : "col-start-6 col-end-9")
             }
           >
-            {/* <h3
+            <h3
               className="font-semibold sm:text-lg mb-1"
               style={{ color: "#C2FFF4" }}
             >
-              {(item.startDateTime as Date).toDateString()}
+              {/* {(item.startDateTime as Date).toDateString()} */}
+              {(item.startDateTime as Date).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}
             </h3>
             <h3
               className="font-semibold sm:text-lg mb-1"
@@ -79,7 +80,7 @@ const Stage = ({
               style={{ color: "#C2FFF4" }}
             >
               {item.venue}
-            </h3> */}
+            </h3>
           </div>
         );
 
@@ -145,7 +146,13 @@ const Workshops = () => {
       }
       for(const event of res){
         event.startDateTime = new Date(event.startDateTime)
-        if(event.endDateTime !== null)  event.endDateTime = new Date(event.endDateTime)
+        event.startDateTime.setTime(event.startDateTime.getTime() + event.startDateTime.getTimezoneOffset() * 60 * 1000) //counters the time convertion from utc to local
+        event.startDateTime.setDate(event.startDateTime.getUTCDate())
+        if(event.endDateTime !== null){
+          event.endDateTime = new Date(event.endDateTime)
+          event.endDateTime.setTime(event.endDateTime.getTime() + event.endDateTime.getTimezoneOffset() * 60 * 1000)
+          event.endDateTime.setDate(event.endDateTime.getUTCDate())
+        }
       }
       res.sort((a, b) => (a.startDateTime as Date).getTime() - (b.startDateTime as Date).getTime())
       setEvents(res)

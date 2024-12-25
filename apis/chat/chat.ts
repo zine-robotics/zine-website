@@ -7,7 +7,7 @@ import { RequestData, ResponseData } from "./types";
 const apiURL = "https://positively-primary-stallion.ngrok-free.app"
 export const askChatBot = async ({prompt, session}: RequestData) => {
     const response = await axios.post(apiURL, {prompt, session})
-    console.log(response)
+    // console.log(response)
     return response.data as ResponseData
 }
 

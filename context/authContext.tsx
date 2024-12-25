@@ -57,6 +57,7 @@ export const AuthContextProvider = ({ children }: { children: React.ReactNode })
       if(failureReason != null) {
         throw new Error(failureReason);
       }
+      console.log(response.data)
       localStorage.setItem("token", jwt);
       getUserDetails().then((res) => {
         const userData = res as IUser;

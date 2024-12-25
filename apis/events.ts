@@ -84,6 +84,15 @@ export interface IEventData extends IEventCreateData{
     id: number;
 }
 
+interface IUserDetails {
+    name: string,
+    email: string,
+}
+export interface IHackathonRegistrationInfo {
+    numRegistrations: number;
+    list: IUserDetails[];
+}
+
 export const getAllEvents = async (): Promise<IEventData[]|undefined> => {
     try{
         const response = await axios.get("/event");
@@ -173,5 +182,14 @@ export const editEvent = async (data: IEventData): Promise<IEventData|undefined>
     catch(err){
         // console.log(err);
         return undefined;
+    }
+}
+
+export const fetchHackathonRegistrationInfo = async () => {
+    try {
+        const response = await axios.get('event/hackathon/registration-info');
+        return response.data as IHackathonRegistrationInfo;
+    } catch(err) {
+        return {list: [], numRegistrations: 0} as IHackathonRegistrationInfo;
     }
 }

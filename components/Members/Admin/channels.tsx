@@ -96,11 +96,17 @@ const Channels = () => {
     return () => window.removeEventListener("resize", updateScreenWidth);
   }, []);
 
+  useEffect(() => {
+    if(authUser?.email && currRoomID)
+      updateLastSeen(authUser?.email, currRoomID)
+  }, [roomLastSeen, currRoomID])
+
   // to fetch the rooms once the component loads
   useEffect(() => {
     if (authUser?.email) {
       fetchRoomsByUser(authUser.email)
         .then((res) => {
+          // console.log("res",res[0]);
           setRooms(res);
           // console.log(res);
           
@@ -116,6 +122,10 @@ const Channels = () => {
     }
   }, []);
 
+  // useEffect(() => {
+  //   // console.log("list of rooms", rooms);
+  // }, [rooms])
+
   useEffect(() => {
     if (lastMessageRef.current) {
       lastMessageRef.current!.scrollIntoView();
@@ -126,14 +136,13 @@ const Channels = () => {
     if (!currMsg) return;
     const msgBody = {
       type: "text",
-      content: currMsg,
+      content: currMsg.trim(),
       sentFrom: authUser?.id,
       roomId: currRoomID,
       replyTo: replyingMessageID,
       contentUrl: null,
     };
     if (msgBody.sentFrom) {
-      // const res = await sendMessage(msgBody);
       stompClient.publish({ destination: "/app/message", headers: {}, body: JSON.stringify(msgBody) });
     }
     setCurrMsg("");
@@ -258,7 +267,7 @@ const Channels = () => {
     // console.log(room);
     
     if(currRoomID !== null)
-      updateLastSeen(authUser?.email as string, currRoomID as number);
+      updateLastSeen(authUser?.email as string, room.id as number);
     setCurrRoomID(room.id);
     currRoomID !== room.id && setMessages([]);
     displayRoomMessages(room.id)
@@ -313,9 +322,10 @@ const Channels = () => {
                     <div className="flex items-center">{announcementRoom?.name}</div>
                     <div className="text-xs ml-auto pr-2 flex items-center">{announcementRoom?.unreadMessages!=0 ? announcementRoom?.unreadMessages : <></>}</div>
                   </div>
+                {rooms.filter(room => room.type == 'workshop').length != 0 &&
                   <div className="font-normal ml-2 mt-5" style={{ color: "#8D989F" }}>
                   Workshops
-                </div>
+                  </div>}
                 {rooms &&
                   rooms.map((ele) => {
                     if (ele.id === null) return; //if room does not exist
@@ -370,9 +380,10 @@ const Channels = () => {
                       )
                     );
                   })}
+                {rooms.filter(room => room.type == 'group').length != 0 &&
                 <div className="font-normal ml-2 mt-5" style={{ color: "#8D989F" }}>
                   Groups
-                </div>
+                  </div>}
                 {rooms &&
                   rooms.map((ele) => {
                     if (ele.id === null) return; //if room does not exist
@@ -418,9 +429,10 @@ const Channels = () => {
                       )
                     );
                   })}
+                {rooms.filter(room => room.type == 'project').length != 0 &&
                 <div className="font-normal ml-2 mt-5" style={{ color: "#8D989F" }}>
                   Projects
-                </div>
+                  </div>}
                 {rooms &&
                   rooms.map((ele) => {
                     if (ele.id === null) return; //if room does not exist
@@ -707,7 +719,7 @@ const Channels = () => {
               {/* <p className="whitespace-pre-wrap">
                                             {msg.message.split(/\s+/g).map(word => word.match(URL_REGEX) ? <><a href={word} className="text-blue-500 underline" target="_blank">{word}</a>{" "}</> : word + " ")}
                                         </p> */}
-              <div className="overflow-auto h-screen">
+              <div className="overflow-auto h-screen overflow-x-hidden">
                 {messages?.map((msg, idx, array) => {
                   const date = unixToHumanReadable(msg.timestamp);
                   const whiteRect = (idx + 1 < array.length && array[idx + 1].sentFrom.id !== msg.sentFrom.id) || idx == array.length - 1;

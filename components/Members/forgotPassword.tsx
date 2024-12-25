@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import ZineLogo from "../../images/zinelogo.png";
@@ -20,8 +20,10 @@ const ForgotPassword = () => {
     handleSubmit,
   } = useForm<IForgotPasswordData>();
   const router = useRouter();
+  const [buttonColor, setButtonColor] = useState("#0C72B0");
 
   const onSubmit = ({ email }: IForgotPasswordData) => {
+    setButtonColor("#053C5E");
     sendPasswordResetEmail(email)
       .then(() => {
         toast.success("Password reset email sent!");
@@ -29,8 +31,10 @@ const ForgotPassword = () => {
       })
       .catch((error) => {
         // console.log(error);
-        if (error.code === "auth/user-not-found") toast.error("Email not found");
-        else if (error.code === "auth/invalid-email") toast.error("Email not valid");
+        if (error.status === 400) toast.error("Email not found");
+        else if (error.status === 500) toast.error("Error validating email. Please try again");
+      }).finally(() => {
+        setButtonColor("#0C72B0");
       });
   };
 
@@ -57,7 +61,7 @@ const ForgotPassword = () => {
             )}
           </div>
 
-          <button className="mt-8 p-4 block w-full rounded-3xl text-white" onClick={handleSubmit(onSubmit)} style={{ background: "#0C72B0" }}>
+          <button className="mt-8 p-4 block w-full rounded-3xl text-white" onClick={handleSubmit(onSubmit)} style={{ background: buttonColor }}>
             Forgot Password
           </button>
           <p className="mt-8 text-sm text-center">

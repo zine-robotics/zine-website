@@ -70,6 +70,51 @@ interface ICreateUser {
   name: string;
   email: string;
 }
+9
+export const checkHackathonRegistration = async () => {
+  try {
+    const token = localStorage.getItem("token");
+    if(!token) return;
+    const response = await axios.get("/user/register/hackathon", {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if(response.status === 200) return response.data;
+    else{
+      // console.log("Error code:", response.status);
+      return undefined;
+    }
+  } catch (err) {
+    throw err;
+  }
+  
+}
+
+export const registerHackathon = async () => {
+  try {
+    const token = localStorage.getItem("token");
+    if(!token) return false;
+    const response = await axios.post("/user/register/hackathon", {}, {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+    // .then((res) => {
+    //   console.log(res);
+    //   if(res.status === 200) return true;
+    //   else return false;
+    // }).catch((err) => {
+    //   console.log(err);
+    //   return false;
+    // })
+    if(response.status === 200) return true;
+    else{
+      console.log("Error code:", response.status);
+      return false
+    }
+    // console.log(response)
+  } catch (err) {
+    return false;
+  }
+}
+
 
 //not used
 // export const createUser = async ({ uid, name, email }: ICreateUser) => {

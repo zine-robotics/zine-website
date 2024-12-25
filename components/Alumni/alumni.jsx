@@ -3,7 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook, faInstagram, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+
 import { year2009, year2010, year2011, year2012, year2016, year2017, year2018, year2019, year2020, year2021, year2022, year2023, year2024 } from '../../constants/members'
+
 
 
 
@@ -34,7 +36,9 @@ const Alumni = () => {
                 {item.facebook !== "" ? <div className="cursor-pointer transform-gpu transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"><Link href={item.facebook}><FontAwesomeIcon icon={faFacebook} className="text-blue-800 mr-4" size="2x" /></Link></div> : <></>}
               </div>
               </div>
+
             </h1>
+
           </div>
         ))}
         </div>

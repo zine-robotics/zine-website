@@ -5,6 +5,7 @@ import {
   Carousal
 
 } from "../components/Gallery";
+//import CreateNewBlog from "../components/Members/Admin/createblog";
 import { SecFooter } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import { ChatButton } from "../components/Chat";
@@ -20,6 +21,7 @@ const GalleryImages: NextPage = () => {
       <ChatButton />
       <Carousal />
       <Gallery />
+      {/* <CreateNewBlog /> */}
       <SecFooter />
     </>
   );

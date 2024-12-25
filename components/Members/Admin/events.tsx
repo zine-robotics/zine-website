@@ -5,8 +5,8 @@ import { useForm } from "react-hook-form";
 import ProtectedRoute from "./ProtectedRoute";
 import { ToastContainer, toast } from "react-toastify";
 import { deleteImage, uploadImage } from "../../../apis/image";
-import RecruitmentForm from "./event-components/recruitmentForm";
-import EventForm from "./event-components/eventForm";
+import RecruitmentForm from "./eventComponents/recruitmentForm";
+import EventForm from "./eventComponents/eventForm";
 import { getAllEvents, getAllRecruitments, IEventData, IRecruitmentData } from "../../../apis/events";
 
 const Events = () => {
@@ -31,9 +31,9 @@ const Events = () => {
                 return;
             }
             for(const event of res){
-                event.startDateTime = new Date(event.startDateTime)
+                event.startDateTime = new Date(event.startDateTime).toUTCString()
                 if(event.endDateTime !== null)
-                    event.endDateTime = new Date(event.endDateTime)
+                    event.endDateTime = new Date(event.endDateTime).toUTCString()
             }
             setEvents(res)
             // console.log(res)

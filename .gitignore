@@ -1,9 +1,14 @@
 node_modules
 .next
+
 out
 out.*
-backups
+
 .DS_Store
+*.log
+
 .env
 .env.local
+
 pages/easterEggs/
+backups

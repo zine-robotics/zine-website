@@ -160,7 +160,7 @@ const Projects = () => {
               <p className="hidden md:inline-block mt-8">{rovertext}</p>
            
               <button className="btn inline-block md:hidden font-bold" onClick={() => setShowMore16(!showMore16)}>{showMore16 ? `Show Less` : `Show More`}</button>
-              <p className="pt-8">Team Members: Batch 2022 & Batch 2023</p>
+              <p className="pt-8">Team Members: Batch 2025 & Batch 2026</p>
             </div>
           </div>
           

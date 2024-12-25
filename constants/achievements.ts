@@ -1,22 +1,25 @@
 export const achievements = [
     {
+
+
         cardTitle: "IRoC-U 2024",
         title: "July 2024",
         cardDetailedText: "Placed top 20 all India in the IRoC-U-2024 \"Autonomous Rover Challenge\" organised by ISRO",
-        cardSubtitle:"Contributors: Batch of 2025 and 2026 "
+        cardSubtitle: "Contributors: Batch of 2025 and 2026 "
+
     },
 
     {
         cardTitle: "Research Paper",
         title: "November 2023",
         cardDetailedText: "\"AI-Enhanced Diagnosis: Pediatric Chest X-Ray Classification for Bronchiolitis and Pneumonia\" presented at 7th International Conference on Image Information Processing ICIIP",
-        cardSubtitle:"Contributors: Priyansh Kothari"
+        cardSubtitle: "Contributors: Priyansh Kothari"
     },
     {
         cardTitle: "Research Paper",
         title: "November 2023",
         cardDetailedText: "\"Design Development and Analysis of 3-DOF Robotic Arm\" presented at 9th IEEE India International Conference on Power Electronics, IICPE 2023",
-        cardSubtitle:"Contributor: Ashok Kumar Saini"
+        cardSubtitle: "Contributor: Ashok Kumar Saini"
     },
     {
         cardTitle: "Maze Solver",
@@ -28,7 +31,7 @@ export const achievements = [
         cardTitle: "Research Paper",
         title: "October 2023",
         cardDetailedText: "\"GAT-DNet: High Fidelity Graph Attention Network for Distribution Optimal Power Flow Pursuit\" presented at 9th IEEE India International Conference on Power Electronics, IICPE 2023",
-        cardSubtitle:"Contributor: Rupesh Yadav"
+        cardSubtitle: "Contributor: Rupesh Yadav"
     },
     {
         cardTitle: "Meshmerize",
@@ -40,7 +43,7 @@ export const achievements = [
         cardTitle: "Utility Patent Published",
         title: "August 2023",
         cardDetailedText: "Collaborated with Sahayta Jaipur (NGO) to build an offline lightweight conversational chatbot - a BERT-based model for bilingual conversation on education and assistance on Road safety. Deployed the model on a SBC and published a utility patent.",
-        cardSubtitle:"Contributors: Harshit Sandilya ,Priyansh Kothari"
+        cardSubtitle: "Contributors: Harshit Sandilya ,Priyansh Kothari"
     },
     {
         cardTitle: "Meshmerize",

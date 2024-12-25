@@ -83,6 +83,40 @@ const SideNav = () => {
                 </p>
               </Link>
               <br />
+              <Link href="/admin/roles">
+                <p
+                  className={`text-xl hover:text-gray-300 cursor-pointer ${
+                    page === "roles"
+                      ? "font-bold"
+                      : ""
+                  }`}
+                >
+                  Roles
+                </p>
+              </Link>
+              <Link href="/admin/tasks">
+                <p
+                  className={`text-xl hover:text-gray-300 cursor-pointer ${
+                    page === "tasks"
+                      ? "font-bold"
+                      : ""
+                  }`}
+                >
+                  Tasks
+                </p>
+              </Link>
+              <Link href="/admin/taskInstances">
+                <p
+                  className={`text-xl hover:text-gray-300 cursor-pointer ${
+                    page === "taskInstances"
+                      ? "font-bold"
+                      : ""
+                  }`}
+                >
+                  Task Instances
+                </p>
+              </Link>
+              <br />
               <Link href="/admin/rooms">
                 <p
                   className={`text-xl hover:text-gray-300 cursor-pointer ${
@@ -97,7 +131,7 @@ const SideNav = () => {
               <Link href="/admin/channels">
                 <p
                   className={`text-xl hover:text-gray-300 cursor-pointer ${
-                    page === "projects"
+                    page === "channels"
                       ? "font-bold"
                       : ""
                   }`}
@@ -105,14 +139,47 @@ const SideNav = () => {
                  Channels
                 </p>
               </Link>
+              <Link href="/admin/hackathon">
+                <p
+                  className={`text-xl hover:text-gray-300 cursor-pointer ${
+                    page === "hackathon"
+                      ? "font-bold"
+                      : ""
+                  }`}
+                >
+                 Hackathon Registrations
+                </p>
+              </Link>
+              {/* <Link href="/admin/createblogs">
+                <p
+                  className={`text-xl hover:text-gray-300 cursor-pointer ${
+                    page === "projects"
+                      ? "font-bold"
+                      : ""
+                  }`}
+                >
+                  Create Blog
+                </p>
+              </Link> */}
+              {/* <Link href="/admin/blogsdisplay">
+                <p
+                  className={`text-xl hover:text-gray-300 cursor-pointer ${
+                    page === "projects"
+                      ? "font-bold"
+                      : ""
+                  }`}
+                >
+                  Blogs View
+                </p>
+              </Link> */}
             </div>
           )}
           {authUser!.type === "user" && (
             <div className="mt-18 w-full">
-              {/* <Link href="/users/projects">
+               {/* <Link href="/users/projects">
                         <p className={`text-xl hover:text-gray-300 cursor-pointer ${page === "projects" ? "font-bold" : ""}`}>Projects</p>
-                    </Link>
-                    <Link href="/users/announcements">
+                    </Link> */}
+              {/*      <Link href="/users/announcements">
                         <p className={`text-xl hover:text-gray-300 cursor-pointer ${page === "announcements" ? "font-bold" : ""}`}>Announcements</p>
                     </Link> */}
               {/* <div className={`bg-white md:w-full py-2 px-10 rounded-2xl ${page === "dashboard" ? "bg-opacity-20" : "bg-opacity-5"}`}>
@@ -151,6 +218,25 @@ const SideNav = () => {
                     }}
                   >
                     Channels
+                  </p>
+                </Link>
+                
+              </div>
+              <div
+                className={`bg-white md:w-full py-2 px-10 rounded-2xl mt-2 ${
+                  page === "projects"
+                    ? "bg-opacity-20"
+                    : "bg-opacity-5"
+                }`}
+              >
+                <Link href="/users/projects">
+                  <p
+                    className={`text-white text-xl cursor-pointer font-extrabold opacity-100`}
+                    onClick={() => {
+                      setHide(true);
+                    }}
+                  >
+                    Project
                   </p>
                 </Link>
               </div>
@@ -223,5 +309,6 @@ const SideNav = () => {
     
   );
 };
+
 
 export default SideNav;

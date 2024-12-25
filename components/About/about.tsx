@@ -38,16 +38,16 @@ const About = () => {
             </div>
             <h1 className="pt-16 pb-8 text-center text-4xl px-12 lg:px-24 xl:px-48">Memories from ZINE events</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a1} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a2} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a3} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a4} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a5} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a6} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a7} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a8} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a9} className="object-cover"/></div>
-              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a10} className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a2}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a1}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a3}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a4}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a5}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a6}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a7}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a8}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a9}  alt="image not found" className="object-cover"/></div>
+              <div className="opacity-50 hover:opacity-100 transition duration-500 ease-in-out overflow-hidden"><Image src={a10} alt="image not found"  className="object-cover"/></div>
             </div>
 
             <h1 className="text-center py-8">Follow our photostreams on Social Platforms for more...</h1>
