@@ -134,6 +134,12 @@ import vedika from "../images/members/2027/vedika.webp";
 import paarthA from "../images/members/2028/paarthA.jpeg";
 import vikas from "../images/members/2028/vikas.jpeg";
 
+import lotus from "../images/members/2029/lotus.jpeg";
+import navdeep from "../images/members/2029/navdeep.jpeg";
+import gayathri from "../images/members/2029/gayathri.jpeg";
+import rishika from "../images/members/2029/rishika.jpeg";
+import archit from "../images/members/2029/archit.jpeg";
+
 interface Member {
   name: string;
   image: StaticImageData;
@@ -1766,4 +1772,61 @@ export const year2028: Member[] = [
     instagram: "",
     facebook: "",
   }
+]
+
+export const year2029: Member[] = [
+  {
+    name: "Lotus Pachat",
+    image: lotus,
+    desc: "Electrical Engineering",
+   github: "",
+    linkedin: "https://www.linkedin.com/in/lotus-p-5a6916375/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  },
+ {
+    name: "Navdeep Singh",
+    image: navdeep,
+    desc: "Electrical Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/navdeep-singh-44646336b/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  },
+
+ {
+    name: "Archit Pathak",
+    image: archit,
+    desc: "Electrical Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/archit-pathak22/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+ },
+
+  {
+    name: "Gayathri",
+    image: gayathri,
+    desc: "Mechanical Engineering",
+    github: "",
+    linkedin: "",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  },
+
+  {
+    name: "Rishika Das",
+    image: rishika,
+    desc: "Electrical Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/archit-pathak22/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  }
+
 ]
