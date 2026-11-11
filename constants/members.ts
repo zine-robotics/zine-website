@@ -1788,7 +1788,7 @@ export const year2029: Member[] = [
  {
     name: "Navdeep Singh",
     image: navdeep,
-    desc: "Electrical Engineering",
+    desc: "Electronics and Communication Engineering",
     github: "",
     linkedin: "https://www.linkedin.com/in/navdeep-singh-44646336b/",
     twitter: "",
@@ -1821,7 +1821,7 @@ export const year2029: Member[] = [
   {
     name: "Rishika Das",
     image: rishika,
-    desc: "Electrical Engineering",
+    desc: "Electronics and Communication Engineering",
     github: "",
     linkedin: "https://www.linkedin.com/in/archit-pathak22/",
     twitter: "",
