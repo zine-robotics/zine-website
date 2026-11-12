@@ -5,6 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook, faInstagram, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { year2009, year2010, year2011, year2012, year2016, year2017, year2018, year2019, year2020, year2021, year2022, year2023, year2024, year2025, year2026} from '../../constants/members'
 
+// to sort names alphabetically
+const sortMembers = (members) =>
+  [...members].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, {
+      sensitivity: "base",
+    })
+  );
 
 
 const Alumni = () => {
@@ -18,7 +25,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2026</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2026.map((item, index) => (
+        {sortMembers(year2026).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -40,7 +47,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2025</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2025.map((item, index) => (
+        {sortMembers(year2025).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -62,7 +69,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2024</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2024.map((item, index) => (
+        {sortMembers(year2024).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -84,7 +91,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2023</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2023.map((item, index) => (
+        {sortMembers(year2023).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -106,7 +113,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2022</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2022.map((item, index) => (
+        {sortMembers(year2022).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -128,7 +135,7 @@ const Alumni = () => {
          </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2021</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2021.map((item, index) => (
+        {sortMembers(year2021).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -150,7 +157,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2020</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2020.map((item, index) => (
+        {sortMembers(year2020).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -172,7 +179,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2019</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2019.map((item, index) => (
+        {sortMembers(year2019).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -194,7 +201,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2018</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2018.map((item, index) => (
+        {sortMembers(year2018).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -216,7 +223,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2017</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2017.map((item, index) => (
+        {sortMembers(year2017).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -238,7 +245,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2016</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2016.map((item, index) => (
+        {sortMembers(year2016).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -260,7 +267,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2012</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2012.map((item, index) => (
+        {sortMembers(year2012).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -282,7 +289,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2011</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2011.map((item, index) => (
+        {sortMembers(year2011).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -304,7 +311,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2010</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2010.map((item, index) => (
+        {sortMembers(year2010).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
@@ -326,7 +333,7 @@ const Alumni = () => {
         </div>
         <h1 className="pt-12 text-center font-bold text-4xl px-12 lg:px-24">2009</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-16 px-12 lg:px-24">
-        {year2009.map((item, index) => (
+        {sortMembers(year2009).map((item, index) => (
           <div key={index} className="col-span-1">
             <h1 className="text-black py-2 font-nunito text-center">
               <div className="w-48 mx-auto member-hover">
