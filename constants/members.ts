@@ -1601,7 +1601,7 @@ export const year2026: Member[] = [
   {
     name: "Mahaveer Jeenger",
     image: mahaveer,
-    desc: "Electronics and Communication Engineering",
+    desc: "Bharat Electronics Ltd.",
     github: "",
     linkedin: "https://www.linkedin.com/in/mahaveer-jeenger-4a836a274/",
     twitter: "",
@@ -1612,7 +1612,7 @@ export const year2026: Member[] = [
     name: "Aditya Wadje",
     image: adityaW,
     github: "",
-    desc: "Electronics and Communication Engineering",
+    desc: "Infineon Technologies",
     linkedin: "https://www.linkedin.com/in/aditya-wadje-a53140289/",
     twitter: "",
     instagram: "",
@@ -1621,7 +1621,7 @@ export const year2026: Member[] = [
   {
     name: "Divyansh Ramola",
     image: divyanshR,
-    desc: "Mechanical Engineering",
+    desc: "GET-R&D Mechanical at Addverb",
     github: "",
     linkedin: "https://www.linkedin.com/in/divyansh-ramola-b87100299/",
     twitter: "",
@@ -1631,7 +1631,7 @@ export const year2026: Member[] = [
   {
     name: "Kushal Gajjar",
     image: kushal,
-    desc: "Electronics and Communication Engineering",
+    desc: "AI Labs, Axestrack",
     github: "",
     linkedin: "https://www.linkedin.com/in/kushal-gajjar-a12a3a290/",
     twitter: "",
@@ -1651,7 +1651,7 @@ export const year2026: Member[] = [
   {
     name: "Alok Kumar",
     image: alokK,
-    desc: "Electronics and Communication Engineering",
+    desc: "R&D Specialist, Bharat Electronics Ltd.",
     github: "",
     linkedin: "https://www.linkedin.com/in/alok-kumar-994709285/",
     twitter: "",
@@ -1661,7 +1661,7 @@ export const year2026: Member[] = [
   {
     name: "Krishna Singh",
     image: krishna,
-    desc: "Electrical Engineering",
+    desc: "GET at Addverb",
     github: "",
     linkedin: "https://www.linkedin.com/in/krishna-singh-903533290/",
     twitter: "",
@@ -1671,7 +1671,7 @@ export const year2026: Member[] = [
   {
     name: 'Herschelle Mathew Thomas',
     image: herschelle,
-    desc: "Computer Science and Engineering",
+    desc: "Software Engineer at MakeMyTrip",
     github: "",
     linkedin: 'https://www.linkedin.com/in/herschelle-thomas-37513b24b/',
     twitter: "",
