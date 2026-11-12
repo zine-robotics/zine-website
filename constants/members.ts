@@ -18,6 +18,8 @@ import alok from "../images/members/2012/alok.webp";
 import nirmala from "../images/members/2012/nirmala.webp";
 import ankita from "../images/members/2012/ankita.jpg";
 import anoop from "../images/members/2012/anoop.jpg";
+import ritika from "../images/members/2012/ritika.jpeg";
+
 
 import akash from "../images/members/2016/akash.jpg";
 import anirudh from "../images/members/2016/anirudh.jpg";
@@ -279,6 +281,16 @@ export const year2012: Member[] = [
     desc: "Electronics Engineer, Australian Astronomical Optics, Macquarie",
     image: nirmala,
     linkedin: "https://www.linkedin.com/in/nirmala-kunwar-ranawat/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+    github: "",
+  },
+   {
+    name: "Ritika Dhyawala",
+    desc: "Founder at Sarthi : Mindfulness AI",
+    image: ritika,
+    linkedin: "https://www.linkedin.com/in/ritika-dhyawala-a5a0371b/",
     twitter: "",
     instagram: "",
     facebook: "",
@@ -1775,6 +1787,26 @@ export const year2028: Member[] = [
 ]
 
 export const year2029: Member[] = [
+   {
+    name: "Archit Pathak",
+    image: archit,
+    desc: "Electrical Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/archit-pathak22/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+ },
+  {
+    name: "Gayathri",
+    image: gayathri,
+    desc: "Mechanical Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/gayathri-s-72a091379/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  },
   {
     name: "Lotus P",
     image: lotus,
@@ -1791,28 +1823,6 @@ export const year2029: Member[] = [
     desc: "Electronics and Communication Engineering",
     github: "",
     linkedin: "https://www.linkedin.com/in/navdeep-singh-44646336b/",
-    twitter: "",
-    instagram: "",
-    facebook: "",
-  },
-
- {
-    name: "Archit Pathak",
-    image: archit,
-    desc: "Electrical Engineering",
-    github: "",
-    linkedin: "https://www.linkedin.com/in/archit-pathak22/",
-    twitter: "",
-    instagram: "",
-    facebook: "",
- },
-
-  {
-    name: "Gayathri",
-    image: gayathri,
-    desc: "Mechanical Engineering",
-    github: "",
-    linkedin: "https://www.linkedin.com/in/gayathri-s-72a091379/",
     twitter: "",
     instagram: "",
     facebook: "",
