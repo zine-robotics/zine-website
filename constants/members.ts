@@ -134,6 +134,12 @@ import vedika from "../images/members/2027/vedika.webp";
 import paarthA from "../images/members/2028/paarthA.jpeg";
 import vikas from "../images/members/2028/vikas.jpeg";
 
+import lotus from "../images/members/2029/lotus.jpeg";
+import navdeep from "../images/members/2029/navdeep.jpeg";
+import gayathri from "../images/members/2029/gayathri.jpeg";
+import rishika from "../images/members/2029/rishika.jpeg";
+import archit from "../images/members/2029/archit.jpeg";
+
 interface Member {
   name: string;
   image: StaticImageData;
@@ -159,9 +165,9 @@ export const founders: Member[] = [
   {
     name: "ARPIT JAIN",
     image: arpit,
-    desc: "Co-Founder Engineer's Garage",
+    desc: "Online Business Consultant",
     github: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/arpit-jain-1463b2a/",
     twitter: "",
     instagram: "",
     facebook: "https://www.facebook.com/arpit.jain.37604",
@@ -169,9 +175,9 @@ export const founders: Member[] = [
   {
     name: "ANUPAM KUMAR",
     image: anupam,
-    desc: "Signal Engineer Indian Railway Services",
+    desc: "Senior Divisional Signal & telecommunication Engineer (Sr.DSTE)/JU at Indian Railways",
     github: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/anupam-kumar-8647039b/",
     twitter: "",
     instagram: "",
     facebook: "https://www.facebook.com/anupamkrmeena",
@@ -191,9 +197,9 @@ export const founders: Member[] = [
 export const year2009: Member[] = [
   {
     name: "Devendra Sharma",
-    desc: "Senior Manager at Biocon\n PG at Indian school of business",
+    desc: "Co-Founder at RaveonAI Lifesciences Solutions",
     image: devendra,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/devendra11/",
     twitter: "",
     instagram: "",
     facebook: "https://www.facebook.com/devendra.is.here",
@@ -203,7 +209,7 @@ export const year2009: Member[] = [
     name: "Himanshu Gothwal",
     desc: "Software developer, Epic\nMS, Computer Science, IIT Roorkee",
     image: himanshu1,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/himanshu-gothwal/",
     twitter: "",
     instagram: "",
     facebook: "https://www.linkedin.com/in/himanshu-gothwal-8a61a816",
@@ -214,9 +220,9 @@ export const year2009: Member[] = [
 export const year2010: Member[] = [
   {
     name: "Abhinav Sadu",
-    desc: " Ph.D. RWTH Aachen University, Germany.",
+    desc: "Solution Architect Omnivise Control & Digital Solutions @Siemens Energy",
     image: abhinav,
-    linkedin: "https://www.linkedin.com/in/abhinav-sadu-64b71813/",
+    linkedin: "https://www.linkedin.com/in/abhinav-sadu-488709a/",
     twitter: "",
     instagram: "",
     facebook: "",
@@ -224,7 +230,7 @@ export const year2010: Member[] = [
   },
   {
     name: "Kriti Saxena",
-    desc: "PGDM. IIM Kozhikode, India.\nRPG Group, Summer Intern",
+    desc: "GenAI Safety Strategy at Google",
     image: kriti1,
     linkedin: "https://www.linkedin.com/in/kritisaxenaiimk/	",
     twitter: "",
@@ -234,7 +240,7 @@ export const year2010: Member[] = [
   },
   {
     name: "Ambarish Desai",
-    desc: "Controls Design EngineerControls, General Motors\n M.S. University of Michigan, USA",
+    desc: "Sr. Controls Design Engineer, General Motors",
     image: ambarish,
     linkedin: "https://www.linkedin.com/in/a14desai/",
     twitter: "",
@@ -247,9 +253,9 @@ export const year2010: Member[] = [
 export const year2011: Member[] = [
   {
     name: "Shashwat Bhattacharya",
-    desc: " M.S. TU München, Munich, Germany.",
+    desc: "Assistant Professor, IIT Mandi",
     image: shashwat,
-    linkedin: "https://www.linkedin.com/in/shashwat-bhattacharya-73758114/	",
+    linkedin: "https://www.linkedin.com/in/shashwat-bhattacharya-3191b843/",
     twitter: "",
     instagram: "",
     facebook: "",
@@ -260,7 +266,7 @@ export const year2011: Member[] = [
 export const year2012: Member[] = [
   {
     name: "Alok Agrawal",
-    desc: "Sr. Software Controls Engineer at Medtronic\nM. S. Purdue University, USA",
+    desc: "Sr. Staff SW Engineer - Safety Critical Products",
     image: alok,
     linkedin: "https://www.linkedin.com/in/agrawalalok1/",
     twitter: "",
@@ -290,12 +296,12 @@ export const year2012: Member[] = [
   },
   {
     name: "Ankita Gupta",
-    desc: "Applied Scientist, Amazon India \n University of Massachusetts, Amherst\nIISc Banglore, India",
+    desc: "Ph.D. Candidate at University of Massachusetts Amherst",
     image: ankita,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/ankita-gupta-4b4571104/",
     twitter: "",
     instagram: "",
-    facebook: "https://www.facebook.com/ankita.gupta.39142/",
+    facebook: "",
     github: "",
   },
   {
@@ -313,7 +319,7 @@ export const year2012: Member[] = [
 export const year2016: Member[] = [
   {
     name: "Vaibhav Jain",
-    desc: "SMTS at Salesforce",
+    desc: "Software Engineer at Salesforce",
     image: vaibhav,
     linkedin: "https://www.linkedin.com/in/vaibhavjainvj/",
     twitter: "",
@@ -323,7 +329,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Sharad Garg",
-    desc: "Project Leader at De Shaw",
+    desc: "Principal Manager, Tech at De Shaw",
     image: sharad,
     linkedin: "https://www.linkedin.com/in/sharad-garg-6b191194/",
     twitter: "",
@@ -333,7 +339,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Paresh Anand",
-    desc: "Senior Associate at PwC\nMBA, IIM Kozhikode ",
+    desc: "Country Manager - Parador India at BirlaNu ",
     image: paresh,
     linkedin: "https://www.linkedin.com/in/paresh-anand/",
     twitter: "",
@@ -343,7 +349,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Piyush Chauhan",
-    desc: "Investment Banking Analyst at Bank of America \n MBA, Symbiosis Institute of Business Management, Pune",
+    desc: "Manager at Bank of America",
     image: piyush1,
     linkedin: "https://www.linkedin.com/in/piyush-chauhan-b91704138/",
     twitter: "",
@@ -353,7 +359,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Rajat Kumar Arya",
-    desc: "Saint-Gobain",
+    desc: "Business Excellence Project Manager at Topsoe",
     image: rajatkumar,
     linkedin: "https://www.linkedin.com/in/rajk21feb/",
     twitter: "",
@@ -363,7 +369,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Mihika Gupta",
-    desc: "Experienced Associate, PricewaterhouseCoopers\n MBA, IIM Indore",
+    desc: "Manager, EY-Parthenon",
     image: mihika,
     linkedin: "https://www.linkedin.com/in/mihika-gupta-a57846171/",
     twitter: "",
@@ -384,7 +390,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Akash Shah",
-    desc: "Product & Growth @ OYO",
+    desc: "Product Manager at Blinkit",
     image: akash,
     linkedin: "https://www.linkedin.com/in/akash-shah-604/",
     twitter: "",
@@ -394,7 +400,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Avinash Sharma",
-    desc: "Imaging Scientist at Algolux \n M.S. Concordia University, Montreal, QC, Canada",
+    desc: "Senior Staff Engineer/ Manager at Qualcomm",
     image: avinash,
     linkedin: "https://www.linkedin.com/in/avinash-sharma-561335a3/",
     twitter: "",
@@ -404,7 +410,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Anshul Mittal",
-    desc: "Founding Member at SALT - mysaltapp",
+    desc: "Head of Engineering @ Prodigal",
     image: anshul,
     linkedin: "https://www.linkedin.com/in/anshulmittal712/",
     twitter: "",
@@ -414,7 +420,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Sanjay Thakur",
-    desc: "Founder and CEO at Rydesafely\n M.S. McGill University, Montreal, Canada",
+    desc: "Founder @ Widushi Education",
     image: sanjay,
     linkedin: "https://www.linkedin.com/in/sanjay-thakur-49a704176/",
     twitter: "",
@@ -424,7 +430,7 @@ export const year2016: Member[] = [
   },
   {
     name: "Saatvik Shah",
-    desc: "Software Engineer at IMC Trading\nM.S. Carnegie Mellon University, Pittsburgh, USA",
+    desc: "Lead Software Engineer at IMC Trading",
     image: satvik,
     linkedin: "https://www.linkedin.com/in/saatvikshah/",
     twitter: "",
@@ -437,7 +443,7 @@ export const year2016: Member[] = [
 export const year2017: Member[] = [
   {
     name: "Shubham Tripathi",
-    desc: "Applied Researcher, Microsoft \n MS, Language Technology Institute, School of Computer Science, CMU, US.",
+    desc: "Senior Applied Researcher, Microsoft",
     image: shubham,
     linkedin: "https://www.linkedin.com/in/stripathi08/",
     twitter: "",
@@ -447,7 +453,7 @@ export const year2017: Member[] = [
   },
   {
     name: "Karsh Tharayani",
-    desc: "Robotics Algorithm Developer at MathWorks \n M.S. Carnegie Mellon University, Pittsburgh, USA",
+    desc: "Senior Software Engineer at Mathworks",
     image: karsh,
     linkedin: "https://www.linkedin.com/in/karsh-tharyani-264a48104/",
     twitter: "",
@@ -457,7 +463,7 @@ export const year2017: Member[] = [
   },
   {
     name: "Sarthak Jain",
-    desc: "MS Software Engineering, San Jose State University, USA",
+    desc: "Staff Software Engineer at LinkedIn",
     image: sarthak,
     linkedin: "https://www.linkedin.com/in/sarthak-jain29/",
     twitter: "",
@@ -467,7 +473,7 @@ export const year2017: Member[] = [
   },
   {
     name: "Jatin Verma",
-    desc: "AI Scientist at WaveScan Technologies Pte. Ltd. \n ME, Nanyang Technological University, Singapore, 17. M.S. Texas A&M University, USA",
+    desc: "Remote Data Analyst at WaveScan Technologies Pte. Ltd.",
     image: jatin,
     linkedin: "https://www.linkedin.com/in/jverma205/",
     twitter: "",
@@ -477,7 +483,7 @@ export const year2017: Member[] = [
   },
   {
     name: "Devang Anant Darode",
-    desc: "R&D intern at BEC Robotics\nM. Sc. Robotic Systems Engineering, RWTH Aachen, Germany",
+    desc: "Firmware and Embedded Engineering Analyst at Accenture",
     image: devang,
     linkedin: "https://www.linkedin.com/in/devangdarode/",
     twitter: "",
@@ -487,7 +493,7 @@ export const year2017: Member[] = [
   },
   {
     name: "Ayush Jhalani",
-    desc: "Software Developer at Honeywell Intelligrated\nMS, Robotic System Development, Carnegie Mellon University, US",
+    desc: "Software Developer at Zoox",
     image: ayush,
     linkedin: "https://www.linkedin.com/in/ayushjhalani/",
     twitter: "",
@@ -497,7 +503,7 @@ export const year2017: Member[] = [
   },
   {
     name: "Akshay Kumar",
-    desc: "Computer Vision Engineer at Invisible AI\nMS, Robotics Engineering, Worcester Polytechnic Insitute, Massachusetts, US",
+    desc: "Technical Lead | Staff Computer Vision  at Invisible AI",
     image: akshay,
     linkedin: "https://www.linkedin.com/in/kumarakshay324/",
     twitter: "",
@@ -510,7 +516,7 @@ export const year2017: Member[] = [
 export const year2018: Member[] = [
   {
     name: "Saloni jain",
-    desc: "Senior Software Engineer at Arcesium",
+    desc: "Software Engineer at Salesforce",
     image: saloni,
     linkedin: "https://www.linkedin.com/in/saloni-jain-60b32b126/",
     twitter: "",
@@ -521,7 +527,7 @@ export const year2018: Member[] = [
 
   {
     name: "Manish Patki",
-    desc: "Associate at JPMorgan Chase & Co",
+    desc: "Engineering Manager at Navi",
     image: manish,
     linkedin:
       "https://www.linkedin.com/in/manish-patki-21aaa1137/?originalSubdomain=in",
@@ -533,7 +539,7 @@ export const year2018: Member[] = [
 
   {
     name: "Rahul Ravichandran",
-    desc: "Robotics Engineer at Turftank\nMS, Robotics, Aalborg University, Denmark",
+    desc: "Robotics Engineer @ Novo Nordisk",
     image: rahulravi,
     linkedin: "https://www.linkedin.com/in/rahul-ravichandran-b89363129/",
     twitter: "",
@@ -543,7 +549,7 @@ export const year2018: Member[] = [
   },
   {
     name: "Anshul Rawat",
-    desc: "SMTS at Salesforce",
+    desc: "LMTS at Salesforce",
     image: anshulrawat,
     linkedin: "https://www.linkedin.com/in/anshul-rawat-825287129/",
     twitter: "",
@@ -556,7 +562,7 @@ export const year2018: Member[] = [
 export const year2019: Member[] = [
   {
     name: "Mrigakshi Pandey",
-    desc: "Software Engineer at Fidelity Investments",
+    desc: "MSc Embedded Computing Systems at RPTU Kaiserslautern-Landau",
     image: Mrigakshi,
     linkedin: "https://www.linkedin.com/in/mrigakshipandey/",
     twitter: "",
@@ -566,7 +572,7 @@ export const year2019: Member[] = [
   },
   {
     name: "Md Saif",
-    desc: "Senior Product Engineer at Tredence Inc.",
+    desc: "Assistant Manager - Analytics & Data Science at JioHotstar",
     image: MDSaif,
     linkedin: "https://www.linkedin.com/in/md-saif-111267128/",
     twitter: "",
@@ -586,7 +592,7 @@ export const year2019: Member[] = [
   },
   {
     name: "Piyush Jha",
-    desc: "MASc Student at University of Waterloo\nArtificial Intelligence R&D Engineer @Quadrical.ai",
+    desc: "PhD CS @ Georgia Tech",
     image: piyush,
     linkedin: "https://linkedin.com/in/piyush-j/",
     twitter: "",
@@ -596,7 +602,7 @@ export const year2019: Member[] = [
   },
   {
     name: "Puru Lokendra Singh",
-    desc: "SDE at Publicis Sapient",
+    desc: "SDE at Amazon",
     image: puru,
     linkedin: "https://www.linkedin.com/in/puru-lokendra-singh-b9a948134/",
     twitter: "",
@@ -606,7 +612,7 @@ export const year2019: Member[] = [
   },
   {
     name: "Kriti Gupta",
-    desc: "Software Developer at Apple\nGraduate Services Assistant at Arizona State University\n",
+    desc: "Senior Software Engineer at Apple\n",
     image: Kriti,
     linkedin: "https://www.linkedin.com/in/kritigupta13/",
     twitter: "",
@@ -616,7 +622,7 @@ export const year2019: Member[] = [
   },
   {
     name: "Vasanth Reddy",
-    desc: "Graduate Research Assistant at Virginia Tech",
+    desc: "Software Engineer at Nuro",
     image: vasanth,
     linkedin: "https://www.linkedin.com/in/vasanth-reddy-778816108/",
     twitter: "",
@@ -626,7 +632,7 @@ export const year2019: Member[] = [
   },
   {
     name: "Divyam Aditya Singh",
-    desc: "Rakuten Symphony",
+    desc: "Product Manager at Microsoft",
     image: Divyam,
     linkedin: "https://www.linkedin.com/in/divyam-aditya-singh-870369140/",
     twitter: "",
@@ -639,7 +645,7 @@ export const year2019: Member[] = [
 export const year2020: Member[] = [
   {
     name: "Nimesh Khandelwal",
-    desc: "Ph.D. Graduate Student at Indian Institute of Technology, Kanpur",
+    desc: "Researcher, IIT Kanpur; Co-Founder & CTO, xTerra Robotics",
     image: nimesh,
     linkedin: "https://www.linkedin.com/in/nimesh-khandelwal-464b6a125/",
     twitter: "",
@@ -649,7 +655,7 @@ export const year2020: Member[] = [
   },
   {
     name: "Devnath Nair",
-    desc: "Robotics Engineer in Autonomous Guided Vehicles at Addverb Technologies, Australia",
+    desc: "Senior Robotics Engineer (Mobile Robotics) at Addverb Technologies, Australia",
     image: devnath,
     linkedin: "https://www.linkedin.com/in/devnath-nair/",
     twitter: "",
@@ -692,7 +698,7 @@ export const year2021: Member[] = [
   },
   {
     name: "Tanmay Agarwal",
-    desc: "Robotics Engineer at Addverb",
+    desc: "Robotics/AI at SkildAI",
     image: tanmay,
     linkedin: "https://www.linkedin.com/in/tanmay98/",
     twitter: "",
@@ -702,7 +708,7 @@ export const year2021: Member[] = [
   },
   {
     name: "Tanishk Dudi",
-    desc: "Associate Software Engineer at Quicket Solutions",
+    desc: "Team Lead at Quicket Solutions",
     image: tanishk,
     linkedin: "https://www.linkedin.com/in/tanishkdudi/",
     twitter: "",
@@ -712,7 +718,7 @@ export const year2021: Member[] = [
   },
   {
     name: "Sumit Soni",
-    desc: "Software Engineer at Microsoft",
+    desc: "Software Engineer at Google",
     image: sumit,
     linkedin: "https://www.linkedin.com/in/isumit19/",
     twitter: "",
@@ -732,7 +738,7 @@ export const year2021: Member[] = [
   },
   {
     name: "Pranav Kulshrestha",
-    desc: "Software Developer at Nokia",
+    desc: "SWE at Talentica Software",
     image: pranav,
     linkedin: "https://www.linkedin.com/in/pranavkulshrestha/",
     twitter: "",
@@ -742,7 +748,7 @@ export const year2021: Member[] = [
   },
   {
     name: "Keshav Sarraf",
-    desc: "SDE at Qi-Caps LLP",
+    desc: "Associate at Morgan Stanley",
     image: keshav,
     linkedin: "https://www.linkedin.com/in/keshav-sarraf-0a0176132/",
     twitter: "",
@@ -1181,7 +1187,7 @@ export const year2022: Member[] = [
   {
     name: "BHANU MOHINDRA",
     image: bhanu,
-    desc: "Territory Service Manager at Hero Motocorp",
+    desc: "Masters Thesis Project at KTH Live-in Lab",
     github: "",
     linkedin: "https://www.linkedin.com/in/bhanu-m/",
     twitter: "",
@@ -1201,7 +1207,7 @@ export const year2022: Member[] = [
   {
     name: "CHARU",
     image: charu,
-    desc: "Analyst at Goldman Sachs",
+    desc: "SDE at Microsoft",
     github: "",
     linkedin: "https://www.linkedin.com/in/charu-09874418b/",
     twitter: "",
@@ -1221,7 +1227,7 @@ export const year2022: Member[] = [
   {
     name: "MUSKAN GARG",
     image: muskan,
-    desc: "SDE at Amazon",
+    desc: "SDE at Microsoft",
     github: "",
     linkedin: "https://www.linkedin.com/in/muskan-garg-031054196/",
     twitter: "",
@@ -1241,7 +1247,7 @@ export const year2022: Member[] = [
   {
     name: "PRAVESH SINGH",
     image: pravesh,
-    desc: "R&D Engineer at Mindspace IT Park, Hyderabad",
+    desc: "R&D Engineer at Carrier",
     github: "",
     linkedin: "https://www.linkedin.com/in/pravesh-singh-aaa072199/",
     twitter: "",
@@ -1264,7 +1270,7 @@ export const year2023: Member[] = [
   {
     name: "APOORVA RAJ",
     image: apoorva,
-    desc: "SDE at BOX 8",
+    desc: "Mechanical Engineering",
     github: "",
     linkedin: "https://www.linkedin.com/in/apoorva-raj-840a871ab",
     twitter: "",
@@ -1274,7 +1280,7 @@ export const year2023: Member[] = [
   {
     name: "ARYAMAN SINGH",
     image: aryaman,
-    desc: "SDE at Airtel",
+    desc: "MTS-2 at Adobe",
     github: "",
     linkedin: "https://www.linkedin.com/in/aryaman-singh-kushwaha-a139491b0/",
     twitter: "",
@@ -1284,9 +1290,9 @@ export const year2023: Member[] = [
   {
     name: "CHIRAYU RANKAWAT",
     image: chirayu,
-    desc: "Associate Software Engineer at Dassault Systèmes",
+    desc: "",
     github: "",
-    linkedin: "https://in.linkedin.com/in/chirayu-rankawat",
+    linkedin: "Robotics Engineer at Clutterbot",
     twitter: "",
     instagram: "",
     facebook: "",
@@ -1304,7 +1310,7 @@ export const year2023: Member[] = [
   {
     name: "DEVANSH GARG",
     image: devansh,
-    desc: "Associate Software Engineer at Droom",
+    desc: "Executive Director Devpratik Developers",
     github: "",
     linkedin: "https://www.linkedin.com/in/DevanshGarg31",
     twitter: "",
@@ -1314,7 +1320,7 @@ export const year2023: Member[] = [
   {
     name: "HARSHIT GARG",
     image: harshit,
-    desc: "Engineering Analyst at Goldman Sachs",
+    desc: "SWE-2 at Goldman Sachs",
     github: "",
     linkedin: "https://www.linkedin.com/in/harshitgrg",
     twitter: "",
@@ -1334,7 +1340,7 @@ export const year2023: Member[] = [
   {
     name: "PAVNESH CHATURVEDI",
     image: pavnesh,
-    desc: "Software Engineer at Crio.do",
+    desc: "Software Engineer at Abnormal AI",
     github: "",
     linkedin: "https://www.linkedin.com/in/pavnesh-chaturvedi-208b15197/",
     twitter: "",
@@ -1387,7 +1393,7 @@ export const year2024: Member[] = [
   {
     name: "DIVYANSH GARG",
     image: divyansh,
-    desc: "Flutter Developer at CRED",
+    desc: "Product Engineer at Tamara",
     github: "",
     linkedin: "https://www.linkedin.com/in/dggrx/",
     twitter: "",
@@ -1417,7 +1423,7 @@ export const year2024: Member[] = [
   {
     name: "PRANJALI SRIVASTAVA",
     image: pranjali,
-    desc: "GTE at Bajaj Auto Ltd.",
+    desc: "Assistant Manager at Bajaj Auto Ltd.",
     github: "",
     linkedin: "https://www.linkedin.com/in/pranjali-srivastava-b229b8223/",
     twitter: "",
@@ -1427,7 +1433,7 @@ export const year2024: Member[] = [
   {
     name: "MAHAK GARG",
     image: mahak,
-    desc: "SDE at Flipkart",
+    desc: "SDE at Amazon",
     github: "",
     linkedin: "https://www.linkedin.com/in/mahak-garg-825213212/",
     twitter: "",
@@ -1447,9 +1453,9 @@ export const year2024: Member[] = [
   {
     name: "ASHOK KUMAR SAINI",
     image: ashok,
-    desc: "Research Associate at MBZUAI",
+    desc: "Doctoral Student at MBZUAI",
     github: "",
-    linkedin: "https://www.linkedin.com/in/ashok-kumar-saini-505b9b202/",
+    linkedin: "https://www.linkedin.com/in/ashok-kumar-505b9b202/",
     twitter: "",
     instagram: "",
     facebook: "",
@@ -1766,4 +1772,61 @@ export const year2028: Member[] = [
     instagram: "",
     facebook: "",
   }
+]
+
+export const year2029: Member[] = [
+  {
+    name: "Lotus P",
+    image: lotus,
+    desc: "Electrical Engineering",
+   github: "",
+    linkedin: "https://www.linkedin.com/in/lotus-p-5a6916375/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  },
+ {
+    name: "Navdeep Singh",
+    image: navdeep,
+    desc: "Electronics and Communication Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/navdeep-singh-44646336b/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  },
+
+ {
+    name: "Archit Pathak",
+    image: archit,
+    desc: "Electrical Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/archit-pathak22/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+ },
+
+  {
+    name: "Gayathri",
+    image: gayathri,
+    desc: "Mechanical Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/gayathri-s-72a091379/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  },
+
+  {
+    name: "Rishika Das",
+    image: rishika,
+    desc: "Electronics and Communication Engineering",
+    github: "",
+    linkedin: "https://www.linkedin.com/in/archit-pathak22/",
+    twitter: "",
+    instagram: "",
+    facebook: "",
+  }
+
 ]
