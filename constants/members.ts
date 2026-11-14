@@ -1302,9 +1302,9 @@ export const year2023: Member[] = [
   {
     name: "CHIRAYU RANKAWAT",
     image: chirayu,
-    desc: "",
+    desc: "Robotics Engineer at Clutterbot",
     github: "",
-    linkedin: "Robotics Engineer at Clutterbot",
+    linkedin: "https://www.linkedin.com/in/chirayu-rankawat/",
     twitter: "",
     instagram: "",
     facebook: "",
